@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: lvy010's 技术博客
+subtitle: 'AI/ML专家 | 787+技术文章 | 专业技术分享'
+description: '专注于AI/ML、算法、系统设计的技术博客。787+原创文章，874K+浏览量，分享LLM应用、C++编程、算法解析、Linux系统等技术内容。'
+keywords: 'AI,机器学习,算法,系统设计,C++,Linux,LLM,技术博客,lvy010'
+author: lvy010
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://38.246.244.209:4000
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -96,7 +96,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
