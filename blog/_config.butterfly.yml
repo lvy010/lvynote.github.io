@@ -20,6 +20,7 @@ menu:
     算法: /categories/Algorithm/ || fas fa-calculator
     系统设计: /categories/System/ || fas fa-server
     C++笔记: /categories/Cpp/ || fab fa-cuttlefish
+  图片展示: /gallery/ || fas fa-images
   关于我: /about/ || fas fa-heart
   友链: /link/ || fas fa-users
   留言板: /comments/ || fas fa-comment-dots
@@ -244,7 +245,7 @@ aside:
 
   card_recent_post:
     enable: true
-    limit: 5
+    limit: 6  # 增加最近文章显示数量
     sort: date
     sort_order: -1
 
@@ -256,7 +257,7 @@ aside:
 
   card_tags:
     enable: true
-    limit: 40
+    limit: 30  # 减少标签数量，界面更简洁
     color: true
     sort_order: random
 
