@@ -4,7 +4,13 @@
 
 ![Shannon Dashboard](https://github.com/Kocoro-lab/Shannon/raw/main/docs/images/dashboard-demo.gif)
 
-Shannon是一个生产就绪的平台，专为大规模构建和运行可靠AI智能体而设计。它扮演着*总指挥*（Orchestration Workflows）的角色，负责分解复杂请求并协调多个*安全智能体*（Agent Core）在隔离沙箱中执行任务。这些智能体连接至*智能AI模型与专用工具*（LLM & Tooling Service），同时遵循*中央规则集*（Policy Engine），维护*会话记忆*（Session Management）。所有功能均可通过*主控面板*（Configuration System）配置，并由*全方位监控套件*（Observability Stack）实时追踪，确保性能、成本控制与安全性。
+Shannon是一个生产就绪的平台，专==为大规模构建和运行可靠AI智能体而设计==(可视化)
+
+它扮演着*总指挥*（Orchestration Workflows）的角色，负责分解复杂请求并协调多个*安全智能体*（Agent Core）在隔离沙箱中执行任务
+
+这些智能体连接至*智能AI模型与专用工具*（LLM & Tooling Service），同时遵循*中央规则集*（Policy Engine），维护*会话记忆*（Session Management）
+
+所有功能均可通过*主控面板*（Configuration System）配置，并由*全方位监控套件*（Observability Stack）实时追踪，确保性能、成本控制与安全性
 
 ## 总览
 
@@ -35,7 +41,7 @@ flowchart TD
     A6 -- "监控工作流" --> A0
 ```
 
-## 章节导航
+## 章节
 
 1. [配置系统](01_configuration_system_.md)
 2. [LLM与工具服务（Python）](02_llm___tooling_service__python__.md)
@@ -306,12 +312,12 @@ def search_similar_agents(query_vector):
     return [hit.payload for hit in search_result]
 ```
 
-## 关键设计原则
+## 设计原则
 
-1. **松耦合架构**：各语言组件通过标准接口通信，而非直接调用
-2. **容器化部署**：每个语言组件独立容器化，便于扩展和维护
+1. **松耦合架构**：各语言组件==通过标准接口通信==，而非直接调用
+2. **容器化部署**：==每个语言组件独立容器化==，便于扩展和维护
 3. **标准化协议**：使用 HTTP、gRPC、消息队列等标准协议
-4. **数据驱动**：通过共享数据存储实现状态同步
-5. **异步处理**：利用消息队列实现非阻塞的异步处理
+4. **数据驱动**：通过==共享数据存储==实现状态同步
+5. **异步处理**：利用消息队列实现==非阻塞的异步处理==
 
 这种架构让每种语言都能发挥其最大优势，同时保持系统的整体一致性和可维护性。
