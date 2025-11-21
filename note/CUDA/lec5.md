@@ -1,6 +1,6 @@
 # lec5 Atomics, Reductions, and Warp Shuffle
 
-GPU 并行计算的课程议程，涵盖变换与归约的线程策略、原子操作、并行归约、Warp Shuffle 等 GPU 编程核心技术要点，用于讲解如何高效利用 GPU 进行并行计算优化。
+GPU 并行计算的课程议程，涵盖变换与归约的线程策略、原子操作、并行归约、Warp Shuffle 等 GPU 编程核心技术要点，讲解如何高效利用 GPU 进行并行计算优化。
 
 ![image-20251120215110831](image-20251120215110831.png)
 
